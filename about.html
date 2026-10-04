@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Vitrine — The Curated Shop Window</title>
+  <meta name="description" content="Vitrine is an independent studio that builds shop windows on the web for jewellery and beauty houses — films, 3D and a page in each house's own style.">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("vitrine-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400&family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:wght@600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="bar">
+      <button class="menu-btn" type="button" data-menu-open aria-controls="menu" aria-expanded="false">
+        <span class="burger" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <a class="wordmark" href="about.html" aria-label="Vitrine — about the studio">Vitrine</a>
+      <button class="theme-btn" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html" data-nav="home">Home</a>
+      <div class="has-mega"><a href="jewelry.html" data-nav="jewelry">Fine Jewellery</a><div class="mega" data-mega="jewelry"></div></div>
+      <div class="has-mega"><a href="cosmetics.html" data-nav="beauty">Cosmetics &amp; Perfume</a><div class="mega" data-mega="beauty"></div></div>
+      <a href="index.html#signatures">Icons</a>
+      <a href="about.html" data-nav="about">About</a>
+    </nav>
+  </header>
+
+  <div class="scrim" data-menu-scrim></div>
+  <aside class="menu" id="menu" aria-label="Menu" data-lenis-prevent></aside>
+
+  <main id="main">
+    <section class="campaign campaign--hero" aria-label="Vitrine">
+      <div class="campaign-media" data-drift="0.12"><video data-autoplay muted loop playsinline preload="auto" poster="video/film-vitrine.jpg" src="video/film-vitrine.mp4"></video></div>
+      <div class="campaign-cap">
+        <p class="eyebrow">The curated shop window</p>
+        <h1 class="wordmark wordmark--hero">Vitrine</h1>
+        <p class="lede">An independent studio that shows the most wanted jewellery and beauty houses the way their own boutiques do — each in its own style, behind one glass.</p>
+        <div class="actions">
+          <button class="btn btn-light" type="button" data-film="vitrine"><span class="play" aria-hidden="true"></span>Watch the film</button>
+          <a class="btn btn-glass" href="#contact">Contact us</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#studio">Scroll</a>
+    </section>
+
+    <section class="section" id="studio">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">The studio</p>
+          <h2 class="display-2">Step <em>inside</em></h2>
+        </header>
+        <div class="mosaic">
+          <a class="tile tilt t1 reveal" href="#who" data-drift="0.05">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/gold.jpg" src="video/gold.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Who we are</span><span class="tile-title">A studio, not a shop</span><span class="tile-more">Read more</span></span>
+            </div>
+          </a>
+          <a class="tile tilt t2 reveal" href="#what" data-drift="-0.04" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/hero/home.jpg" alt="Gold necklaces on display busts behind a lit shop window" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">What we do</span><span class="tile-title">Windows for great houses</span><span class="tile-more">See the work</span></span>
+            </div>
+          </a>
+          <button class="tile tilt t3 reveal" type="button" data-film="vitrine" data-drift="0.03">
+            <span class="tilt-inner" data-tilt>
+              <span class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/diamond-light.jpg" src="video/diamond-light.mp4"></video></span>
+              <span class="shade"></span><span class="glare"></span>
+              <span class="tile-cap depth"><span class="eyebrow">The film</span><span class="tile-title">Behind one glass</span><span class="tile-more"><span class="play" aria-hidden="true"></span>Watch</span></span>
+            </span>
+          </button>
+          <a class="tile tilt t4 reveal" href="cosmetics.html" data-drift="-0.06" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/lipstick.jpg" src="video/lipstick.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Department II</span><span class="tile-title">Cosmetics &amp; Perfume</span><span class="tile-more">Enter</span></span>
+            </div>
+          </a>
+          <a class="tile tilt t5 reveal" href="jewelry.html" data-drift="0.05">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/hero/jewelry.jpg" alt="A jeweller's window with necklaces on white busts" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Department I</span><span class="tile-title">Fine Jewellery</span><span class="tile-more">Enter</span></span>
+            </div>
+          </a>
+          <a class="tile tilt t6 reveal" href="#contact" data-drift="-0.03" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/spray.jpg" src="video/spray.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Contact</span><span class="tile-title">Let's build your window</span><span class="tile-more">Get in touch</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="who">
+      <div class="wrap wrap--bleed about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">Who we are</p>
+          <h2 class="display-2">A studio, <em>not a shop.</em></h2>
+          <p>Vitrine is an independent design studio in the United Kingdom. We build shop windows on the web: pages where a house's pieces are shown the way its own boutiques show them — in its own colours, its own lettering and its own light.</p>
+          <p>Nothing is sold here. Every button opens the house's official boutique.</p>
+        </div>
+        <ul class="values reveal" style="--d:120ms">
+          <li><h3>One voice per house</h3><p>Tiffany blue, Cartier red, Chanel black and white — each house keeps its own identity.</p></li>
+          <li><h3>Film and 3D, not banners</h3><p>Seamless looping films and real-time 3D pieces you can turn and open.</p></li>
+          <li><h3>Royalty-free imagery</h3><p>All photography and film is licensed stock. No brand campaign material is used.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="what">
+      <div class="wrap wrap--bleed about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">What we do</p>
+          <h2 class="display-2">Windows for <em>great houses</em></h2>
+          <p>We design and build the whole window — from the first frame of film to the last button — and test it on phones, tablets and large monitors.</p>
+          <p><a class="btn btn-ink" href="#contact">Start a project</a></p>
+        </div>
+        <ul class="values reveal" style="--d:120ms">
+          <li><h3>House pages</h3><p>A page per house with its signatures, its story and a direct door to its boutique.</p></li>
+          <li><h3>Looping films</h3><p>Short films cut to loop without a seam, for full screen, phones and in-store displays.</p></li>
+          <li><h3>3D objects</h3><p>Diamonds and bottles that turn, sparkle and open a film when touched.</p></li>
+          <li><h3>Every screen</h3><p>Built mobile-first, checked edge to edge on wide monitors.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="display-2">Let's build <em>your window</em></h2>
+          <p class="sub">Write, call or visit — we reply within one working day.</p>
+        </header>
+        <!-- PLACEHOLDER contact details: replace the address, phone and email with the studio's real ones. -->
+        <div class="contact">
+          <a class="contact-card reveal" href="https://www.google.com/maps/search/?api=1&amp;query=London%2C%20United%20Kingdom" target="_blank" rel="noopener">
+            <span class="eyebrow">Studio</span>
+            <span class="contact-value">London,<br>United Kingdom</span>
+            <span class="btn-link">Open the map <span aria-hidden="true">&#8599;</span></span>
+          </a>
+          <a class="contact-card reveal" href="tel:+442079460000" style="--d:100ms">
+            <span class="eyebrow">Phone</span>
+            <span class="contact-value">+44 20 7946 0000</span>
+            <span class="btn-link">Call us</span>
+          </a>
+          <a class="contact-card reveal" href="mailto:hello@vitrine.example" style="--d:200ms">
+            <span class="eyebrow">Email</span>
+            <span class="contact-value">hello@vitrine.example</span>
+            <span class="btn-link">Write to us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap--bleed footer-grid">
+      <a class="wordmark footer-mark" href="about.html">Vitrine</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="jewelry.html">Fine Jewellery</a>
+        <a href="cosmetics.html">Cosmetics &amp; Perfume</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Vitrine — an independent curated showcase, not affiliated with the houses featured. Brand names and trademarks belong to their owners. Photography and film: royalty-free stock from Pexels.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/brands.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

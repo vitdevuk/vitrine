@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine — The Curated Shop Window</title>
+  <meta name="description" content="Twelve of the most sought-after houses in fine jewellery and beauty, each shown in its own style, each one click from its official boutique.">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("vitrine-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400&family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:wght@600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="bar">
+      <button class="menu-btn" type="button" data-menu-open aria-controls="menu" aria-expanded="false">
+        <span class="burger" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <a class="wordmark" href="about.html" aria-label="Vitrine — about the studio">Vitrine</a>
+      <button class="theme-btn" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html" data-nav="home">Home</a>
+      <div class="has-mega"><a href="jewelry.html" data-nav="jewelry">Fine Jewellery</a><div class="mega" data-mega="jewelry"></div></div>
+      <div class="has-mega"><a href="cosmetics.html" data-nav="beauty">Cosmetics &amp; Perfume</a><div class="mega" data-mega="beauty"></div></div>
+      <a href="index.html#signatures">Icons</a>
+      <a href="about.html" data-nav="about">About</a>
+    </nav>
+  </header>
+
+  <div class="scrim" data-menu-scrim></div>
+  <aside class="menu" id="menu" aria-label="Menu" data-lenis-prevent></aside>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media" data-parallax="0.3">
+        <img src="images/hero/home.jpg" alt="Gold necklaces on display busts behind a lit shop window" fetchpriority="high">
+      </div>
+      <div class="hero-veil"></div>
+      <button class="hero-3d" type="button" data-film="jewellery" aria-label="Play the jewellery film">
+        <canvas data-scene="gem" aria-hidden="true"></canvas>
+        <span class="hero-3d-cue"><span class="play" aria-hidden="true"></span>Play the film</span>
+      </button>
+      <div class="hero-inner wrap wrap--bleed">
+        <div class="glass hero-glass" data-depth="14">
+          <p class="eyebrow">The curated shop window</p>
+          <h1 class="display">The houses everyone wants, <em>behind one glass.</em></h1>
+          <p class="lede">Twelve of the most sought-after names in fine jewellery and beauty — each shown in its own style, each one click from its official boutique.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="jewelry.html">Fine Jewellery</a>
+            <a class="btn btn-glass" href="cosmetics.html">Cosmetics &amp; Perfume</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#windows">Scroll</a>
+    </section>
+
+    <section class="section" id="windows">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">Two departments</p>
+          <h2 class="display-2">Step through <em>the glass</em></h2>
+        </header>
+        <div class="windows">
+          <a class="window tilt reveal" href="jewelry.html">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/hero/jewelry.jpg" alt="A jeweller's window with necklaces on white busts" loading="lazy" decoding="async"></div>
+              <div class="shade"></div>
+              <div class="glare"></div>
+              <div class="glass window-glass depth">
+                <p class="eyebrow">Department I</p>
+                <h3>Fine Jewellery</h3>
+                <p>Pandora · Swarovski · Tiffany &amp; Co. · Cartier · Mejuri · Missoma</p>
+                <span class="btn btn-glass">Enter</span>
+              </div>
+            </div>
+          </a>
+          <a class="window tilt reveal" href="cosmetics.html" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/hero/beauty.jpg" alt="Backlit shelves of perfume bottles in a fragrance shop" loading="lazy" decoding="async"></div>
+              <div class="shade"></div>
+              <div class="glare"></div>
+              <div class="glass window-glass depth">
+                <p class="eyebrow">Department II</p>
+                <h3>Cosmetics &amp; Perfume</h3>
+                <p>Chanel · Dior · Charlotte Tilbury · Fenty Beauty · Jo Malone London · Rare Beauty</p>
+                <span class="btn btn-glass">Enter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaign" data-film="vitrine" aria-label="The Vitrine film">
+      <div class="campaign-media" data-drift="0.12"><video data-autoplay muted loop playsinline preload="none" poster="video/diamond-light.jpg" src="video/diamond-light.mp4"></video></div>
+      <div class="campaign-cap reveal">
+        <p class="eyebrow">Now showing</p>
+        <h2 class="display-2">Behind <em>one glass</em></h2>
+        <div class="actions">
+          <button class="btn btn-light" type="button" data-film="vitrine"><span class="play" aria-hidden="true"></span>Watch the film</button>
+          <a class="btn btn-glass" href="about.html">About Vitrine</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-band" aria-label="The houses">
+      <div class="marquee"><div class="marquee-track" data-marquee-track></div></div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">In the window</p>
+          <h2 class="display-2">Look <em>closer</em></h2>
+        </header>
+        <div class="mosaic">
+          <a class="tile tilt t1 reveal" href="jewelry.html?cat=necklaces" data-drift="0.05">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/gold.jpg" src="video/gold.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Fine Jewellery</span><span class="tile-title">Gold, layered and lit</span><span class="tile-more">See the necklaces</span></span>
+            </div>
+          </a>
+          <a class="tile tilt t2 reveal" href="cosmetics.html?cat=fragrance" data-drift="-0.04" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/perfume-red.jpg" src="video/perfume-red.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Fragrance</span><span class="tile-title">A bottle against red</span><span class="tile-more">See the fragrances</span></span>
+            </div>
+          </a>
+          <button class="tile tilt t3 reveal" type="button" data-film="jewellery" data-drift="0.03">
+            <span class="tilt-inner" data-tilt>
+              <span class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/pink-diamond.jpg" src="video/pink-diamond.mp4"></video></span>
+              <span class="shade"></span><span class="glare"></span>
+              <span class="tile-cap depth"><span class="eyebrow">The jewellery film</span><span class="tile-title">Diamonds, gold &amp; light</span><span class="tile-more"><span class="play" aria-hidden="true"></span>Watch</span></span>
+            </span>
+          </button>
+          <a class="tile tilt t4 reveal" href="cosmetics.html?cat=makeup" data-drift="-0.06" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/brush.jpg" src="video/brush.mp4"></video></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Makeup</span><span class="tile-title">The finishing touch</span><span class="tile-more">See the makeup</span></span>
+            </div>
+          </a>
+          <a class="tile tilt t5 reveal" href="jewelry.html#missoma" data-drift="0.05">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/brands/missoma.jpg" alt="A gold coin pendant necklace draped across an open book" style="object-position:55% 60%" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+              <span class="tile-cap depth"><span class="eyebrow">Missoma · London</span><span class="tile-title">Gold, worn every day</span><span class="tile-more">Open the house</span></span>
+            </div>
+          </a>
+          <button class="tile tilt t6 reveal" type="button" data-film="perfume" data-drift="-0.03" style="--d:120ms">
+            <span class="tilt-inner" data-tilt>
+              <span class="media"><video data-autoplay muted loop playsinline preload="none" poster="video/spray.jpg" src="video/spray.mp4"></video></span>
+              <span class="shade"></span><span class="glare"></span>
+              <span class="tile-cap depth"><span class="eyebrow">The fragrance film</span><span class="tile-title">The art of perfume</span><span class="tile-more"><span class="play" aria-hidden="true"></span>Watch</span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signatures">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">Icons</p>
+          <h2 class="display-2">Six pieces that <em>made their houses</em></h2>
+          <p class="sub">Each one opens its house — its story, its signatures and a direct door to the official boutique.</p>
+        </header>
+        <ol class="icons" data-rail>
+          <li class="reveal"><a class="icon-link" href="jewelry.html#tiffany" style="--deep:#23867C">
+            <span class="icon-media"><img src="images/brands/tiffany.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">01</span><span class="icon-year">1886</span></span>
+            <h3>The Tiffany Setting</h3><p>Tiffany &amp; Co.</p></a></li>
+          <li class="reveal" style="--d:80ms"><a class="icon-link" href="cosmetics.html#chanel" style="--deep:#111111">
+            <span class="icon-media"><img src="images/brands/chanel.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">02</span><span class="icon-year">1921</span></span>
+            <h3>N°5</h3><p>Chanel</p></a></li>
+          <li class="reveal" style="--d:160ms"><a class="icon-link" href="jewelry.html#cartier" style="--deep:#A6192E">
+            <span class="icon-media"><img src="images/brands/cartier.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">03</span><span class="icon-year">1969</span></span>
+            <h3>The Love bracelet</h3><p>Cartier</p></a></li>
+          <li class="reveal"><a class="icon-link" href="cosmetics.html#dior" style="--deep:#5E5952">
+            <span class="icon-media"><img src="images/brands/dior.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">04</span><span class="icon-year">2015</span></span>
+            <h3>Sauvage</h3><p>Dior</p></a></li>
+          <li class="reveal" style="--d:80ms"><a class="icon-link" href="cosmetics.html#fenty-beauty" style="--deep:#7F4228">
+            <span class="icon-media"><img src="images/brands/fenty-beauty.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">05</span><span class="icon-year">2017</span></span>
+            <h3>Pro Filt'r — 40 shades</h3><p>Fenty Beauty</p></a></li>
+          <li class="reveal" style="--d:160ms"><a class="icon-link" href="cosmetics.html#rare-beauty" style="--deep:#A85D51">
+            <span class="icon-media"><img src="images/brands/rare-beauty.jpg" alt="" loading="lazy" decoding="async"></span>
+            <span class="icon-top"><span class="icon-no">06</span><span class="icon-year">2020</span></span>
+            <h3>Soft Pinch Liquid Blush</h3><p>Rare Beauty</p></a></li>
+        </ol>
+        <div class="rail-nav">
+          <button class="rail-arrow" type="button" data-rail-prev aria-label="Previous">&lsaquo;</button>
+          <div class="rail-dots"></div>
+          <button class="rail-arrow" type="button" data-rail-next aria-label="Next">&rsaquo;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap wrap--bleed about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About Vitrine</p>
+          <h2 class="display-2">A shop window, <em>not a shop.</em></h2>
+          <p>Vitrine is an independent showcase. It gathers the houses people search for most in fine jewellery and beauty, presents each one in its own colours and type, and sends you straight to the brand's own boutique to buy.</p>
+          <p><a class="btn-link" href="about.html">More about the studio <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+        <ul class="values reveal" style="--d:120ms">
+          <li><h3>Official doors only</h3><p>Every “Visit” button opens the house's own website. Nothing is resold here.</p></li>
+          <li><h3>Each house, its own voice</h3><p>Colours and lettering on every card follow the brand's identity — Tiffany blue, Cartier red, Chanel black and white.</p></li>
+          <li><h3>Royalty-free imagery</h3><p>All photography is licensed stock. No brand campaign images are used.</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap--bleed footer-grid">
+      <a class="wordmark footer-mark" href="about.html">Vitrine</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="jewelry.html">Fine Jewellery</a>
+        <a href="cosmetics.html">Cosmetics &amp; Perfume</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Vitrine — an independent curated showcase, not affiliated with the houses featured. Brand names and trademarks belong to their owners. Photography and film: royalty-free stock from Pexels.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/brands.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js" defer></script>
+  <script src="js/scene3d.js" defer></script>
+</body>
+</html>

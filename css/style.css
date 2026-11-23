@@ -1561,6 +1561,21 @@ button {
   .tile-title { font-size: 1.25rem; }
 }
 
+/* work page: four site tiles, offset like the mosaic */
+.w1 { grid-column: 1 / span 7; --ar: 16 / 10; }
+.w2 { grid-column: 8 / span 5; --ar: 4 / 3; margin-top: clamp(40px, 9vw, 170px); }
+.w3 { grid-column: 1 / span 5; --ar: 4 / 3; margin-top: clamp(20px, 3vw, 60px); }
+.w4 { grid-column: 6 / span 7; --ar: 16 / 10; }
+/* the screenshots carry their own headlines, so the caption sits under the image, not on it */
+.mosaic--work .tile { color: inherit; }
+.mosaic--work .shade { display: none; }
+.work-cap { position: static; margin-top: 16px; }
+.work-cap .eyebrow { color: inherit; opacity: 0.7; }
+
+@media (max-width: 760px) {
+  .w1, .w2, .w3, .w4 { grid-column: 1 / -1; --ar: 16 / 10; margin-top: 0; }
+}
+
 /* ---------- film overlay ---------- */
 
 .film {

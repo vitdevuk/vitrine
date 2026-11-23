@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Vitrine</title>
+  <meta name="description" content="Four live websites built from scratch in HTML, CSS and JavaScript: Night Grid, Vessmark, Tuckmap and Vitrine.">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("vitrine-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400&family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:wght@600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="work">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="bar">
+      <button class="menu-btn" type="button" data-menu-open aria-controls="menu" aria-expanded="false">
+        <span class="burger" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <a class="wordmark" href="about.html" aria-label="Vitrine — about the studio">Vitrine</a>
+      <button class="theme-btn" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html" data-nav="home">Home</a>
+      <div class="has-mega"><a href="jewelry.html" data-nav="jewelry">Fine Jewellery</a><div class="mega" data-mega="jewelry"></div></div>
+      <div class="has-mega"><a href="cosmetics.html" data-nav="beauty">Cosmetics &amp; Perfume</a><div class="mega" data-mega="beauty"></div></div>
+      <a href="index.html#signatures">Icons</a>
+      <a href="work.html" data-nav="work">Work</a>
+      <a href="about.html" data-nav="about">About</a>
+    </nav>
+  </header>
+
+  <div class="scrim" data-menu-scrim></div>
+  <aside class="menu" id="menu" aria-label="Menu" data-lenis-prevent></aside>
+
+  <main id="main">
+    <section class="campaign campaign--hero" aria-label="Work">
+      <div class="campaign-media" data-drift="0.12"><video data-autoplay muted loop playsinline preload="auto" poster="video/gold.jpg" src="video/gold.mp4"></video></div>
+      <div class="campaign-cap">
+        <p class="eyebrow">Work</p>
+        <h1 class="display-2">Four live <em>websites</em></h1>
+        <p class="lede">Each one built from scratch in HTML, CSS and JavaScript, and tested on phones, tablets and large monitors. Open any of them and try it yourself.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#sites">See the sites</a>
+          <a class="btn btn-glass" href="about.html#contact">Contact</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#sites">Scroll</a>
+    </section>
+
+    <section class="section" id="sites">
+      <div class="wrap wrap--bleed">
+        <header class="section-head reveal">
+          <p class="eyebrow">Live samples</p>
+          <h2 class="display-2">Open, scroll, <em>touch</em></h2>
+          <p class="sub">Self-initiated sample projects, not client orders. Every tile opens the live site in a new tab.</p>
+        </header>
+        <div class="mosaic mosaic--work">
+          <a class="tile tilt w1 reveal" href="https://vitdevuk.github.io/night-grid/" target="_blank" rel="noopener" data-drift="0.05">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/work/night-grid.jpg" alt="Night Grid home page: a neon street-racing event site" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+            </div>
+            <span class="tile-cap work-cap"><span class="eyebrow">Street-racing event</span><span class="tile-title">Night Grid</span><span class="tile-more">3D scroll scene &#8599;</span></span>
+          </a>
+          <a class="tile tilt w2 reveal" href="https://vitdevuk.github.io/vessmark/" target="_blank" rel="noopener" data-drift="-0.04" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/work/vessmark.jpg" alt="Vessmark home page: an architecture studio with a 3D house" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+            </div>
+            <span class="tile-cap work-cap"><span class="eyebrow">Architecture studio</span><span class="tile-title">Vessmark</span><span class="tile-more">3D house in layers &#8599;</span></span>
+          </a>
+          <a class="tile tilt w3 reveal" href="https://vitdevuk.github.io/tuckmap/" target="_blank" rel="noopener" data-drift="0.03">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/work/tuckmap.jpg" alt="Tuckmap home page: a UK food map with places to eat" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+            </div>
+            <span class="tile-cap work-cap"><span class="eyebrow">UK food map</span><span class="tile-title">Tuckmap</span><span class="tile-more">Live map, menus, ordering &#8599;</span></span>
+          </a>
+          <a class="tile tilt w4 reveal" href="index.html" data-drift="-0.05" style="--d:120ms">
+            <div class="tilt-inner" data-tilt>
+              <div class="media"><img src="images/work/vitrine.jpg" alt="Vitrine home page: a jewellery and beauty showcase" loading="lazy" decoding="async"></div>
+              <div class="shade"></div><div class="glare"></div>
+            </div>
+            <span class="tile-cap work-cap"><span class="eyebrow">Jewellery &amp; beauty showcase</span><span class="tile-title">Vitrine</span><span class="tile-more">This site &#8594;</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap--bleed footer-grid">
+      <a class="wordmark footer-mark" href="about.html">Vitrine</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="jewelry.html">Fine Jewellery</a>
+        <a href="cosmetics.html">Cosmetics &amp; Perfume</a>
+        <a href="work.html">Work</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Vitrine — an independent curated showcase, not affiliated with the houses featured. Brand names and trademarks belong to their owners. Photography and film: royalty-free stock from Pexels.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/brands.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -148,6 +148,7 @@
             <li><button type="button" data-go="jewelry">${esc(D.pages.jewelry.title)} <span class="chev" aria-hidden="true">&rsaquo;</span></button></li>
             <li><button type="button" data-go="beauty">${esc(D.pages.beauty.title)} <span class="chev" aria-hidden="true">&rsaquo;</span></button></li>
             <li><a href="index.html#signatures">Icons</a></li>
+            <li><a href="work.html">Work</a></li>
             <li><a href="about.html">About Vitrine</a></li>
             <li><a href="about.html#contact">Contact</a></li>
           </ul>

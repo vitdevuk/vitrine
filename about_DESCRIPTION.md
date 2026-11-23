@@ -6,6 +6,8 @@
 
 ---
 
+Updated 2026-11-23: contact block (address, phone, email given by Vitaliy that day), a favicon link in the head (`favicon.svg`), and the site now lives at https://vitdevuk.co.uk/. The byte count below is from 2026-10-03.
+
 HTML file (11840 bytes). Text below is the rendered text of the markup in order (scripts/styles dropped; table cells separated by ` | `). Images referenced: images/hero/home.jpg, images/hero/jewelry.jpg.
 
 ```text
@@ -108,16 +110,17 @@ Let's build your window
 Write, call or visit — we reply within one working day.
 
 Studio
-London,
-United Kingdom
+Victoria Coach Station,
+164 Buckingham Palace Road,
+London SW1W 9TP
 Open the map ↗
 
 Phone
-+44 20 7946 0000
++44 7888 630083
 Call us
 
 Email
-hello@vitrine.example
+way@vitdevuk.co.uk
 Write to us
 
 Vitrine
